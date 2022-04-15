@@ -4,6 +4,7 @@ import '../../App.css'
 
 export default function Footer() {
   return ( 
+     
         <div className="container-12">
             <div className="row justify-content-center text-center text-white footer">       
               <div className="col-md-3 col-sm-12 mt-5 mb-5">          

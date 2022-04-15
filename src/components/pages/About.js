@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../layout/Footer'
 
 export default function About() {
   return (
+    <>
     <div className="container-fluid mt-5">
         <div  className="row mb-5">
             <div className="col-md-1">
@@ -62,5 +64,8 @@ export default function About() {
             </div>
         </div>{/*----end of row---*/}
     </div>
+   
+   <Footer/>
+   </>
   )
 }

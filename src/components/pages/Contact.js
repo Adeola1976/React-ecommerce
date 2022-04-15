@@ -1,15 +1,10 @@
 import React from 'react'
 import Footer from '../layout/Footer'
 
-export default function Home() {
+export default function Contact() {
   return (
-    <>
     <div>
-        <h2>Home Page</h2>
+         <Footer/>
     </div>
-    
-    <Footer/>
-    </>
- 
   )
 }

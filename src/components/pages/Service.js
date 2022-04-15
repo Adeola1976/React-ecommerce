@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceItem from './ServiceItem'
+import Footer from '../layout/Footer'
 
 export default function Service() {
     const data = [
@@ -21,10 +22,14 @@ export default function Service() {
 
     ]
   return (
+  <>
     <div className="container-fluid mt-5">
              <div  className="row d-flex justify-content-center text-center">
                    {data.length!==0  && data.map(value=><ServiceItem serviceitem={value} key={value.id} />)}
              </div>
     </div>
+    
+    <Footer/>
+  </>
   )
 }

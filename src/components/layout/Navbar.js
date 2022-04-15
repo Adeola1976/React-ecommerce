@@ -14,23 +14,25 @@ const  Navbar  = ({icon}) =>  {
         <li><a><i className="fas fa-sign-out-alt"></i><span className="hide-sm">Logout</span></a></li>            
      </>
 
-    const guestLinks =
+    const guestLinks =   
                       <> 
                         <Link to="./register" className="text-black text-decoration-none">Register</Link> 
                 
                         <Link to="./register" className="text-black text-decoration-none">Login</Link>           
                       </>
+                      
     return (
-       
+         
            <div className="navbar navbar-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src={Logo}/></a>
+                    <Link className="navbar-brand" to="#"><img src={Logo}/></Link>
                     <div className="d-flex text-black text-decoration-none">
                     <Link to="./" className="text-black text-decoration-none active">HOME</Link>                
                     <Link to="./service" className="text-black text-decoration-none">SERVIZI</Link> 
-                    <Link to="./about" className="text-black text-decoration-none active">CHI-SIAMO</Link>                
-                    <Link to="./register" className="text-black text-decoration-none">CONTATTI</Link> 
-                    <Link to="./register" className="text-black text-decoration-none active">ACCREDI/REGISTRATI</Link>                
+                    <Link to="./about" className="text-black text-decoration-none active">CHI-SIAMO</Link> 
+                    <Link to="./mepa" className="text-black text-decoration-none active">MEPA</Link>                
+                    <Link to="./contact" className="text-black text-decoration-none">CONTATTI</Link> 
+                    <Link to="./login" className="text-black text-decoration-none active">ACCREDI/REGISTRATI</Link>                
                     <i className="material-icons grey-text">favorite_border</i>
                     <i className="material-icons grey-text">shopping_cart</i>
                     </div>
